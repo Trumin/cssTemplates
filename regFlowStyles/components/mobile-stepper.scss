@@ -1,0 +1,14 @@
+.leftSection{
+  @include is-mobile-sm{
+    padding-top: 10px;
+    padding-bottom: 0;
+  }
+  .mobileStepper{
+    background-color: $eventFontColor;
+    padding-left: 0;
+    padding-right: 0;
+    .visibility{
+      visibility: hidden;
+    }
+  }
+}

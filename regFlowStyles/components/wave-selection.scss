@@ -1,0 +1,39 @@
+.waveSelection {
+  h3{
+    @include is-mobile-sm{
+      font-size: 18px;
+      line-height: 26px;
+    }
+  }
+  .timeSelection{
+    @include is-mobile-sm{
+      flex-grow: 1;
+    }
+    .selectUnderline{
+      border-radius: 4px;
+      border: 1px solid $primaryColor;
+      padding-left: 10px;
+      &[class*='error']{
+        border-color: $error_color;
+      }
+      &:after{
+        display: none;
+      }
+      &:before{
+        border-bottom: none;
+      }
+    }
+  }
+  .selectorLabel{
+    margin-right: 20px;
+    @include is-mobile-sm{
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+  .customUnderline{
+    &:after{
+      border-color: $primaryColor;
+    }
+  }
+}

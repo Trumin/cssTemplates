@@ -1,0 +1,104 @@
+.congratulations_paper {
+  margin-bottom: 20px;
+  padding: 4px 4px 10px;
+}
+.congratulation_message {
+  font-size: 1.3em;
+  margin-top: 40px;
+  margin-bottom: 14px;
+}
+
+.get_tickets_link {
+  margin-bottom: 10px;
+  background-color: #0079BC !important;
+}
+.success {
+  p {
+    text-align: center;
+  }
+  .facebook-button {
+    max-width: 320px;
+    margin: 0 auto;
+    justify-content: center;
+    .fb-logo {
+      margin-right: 30px;
+      padding: 8px;
+      background: linear-gradient(180deg, $fb-color 0%, #3A56A1 100%);
+      box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.24);
+      border-radius: 3px;
+      svg {
+        vertical-align: bottom;
+      }
+    }
+    p {
+      color: $fb-color;
+      padding: 0 !important;
+      cursor: pointer;
+    }
+  }
+  .message {
+    p {
+      margin: 0;
+      text-align: left;
+      padding: 15px 15px 0;
+      + p {
+        margin-top: 20px;
+      }
+    }
+  }
+  .form {
+    @include is-mobile-md-min{
+      padding: 15px;
+    }
+    margin: 0 auto;
+    padding: 15px 15px 30px;
+    & > * {
+      max-width: 100%;
+      box-sizing: border-box;
+    }
+    [class*='error']{
+      .helper-text {
+        p{
+          color: $error_color;
+        }
+      }
+    }
+    .helper-text {
+      text-align: right;
+      font-size: 12px;
+      line-height: 16px;
+      margin-top: 5px;
+      p {
+        padding: 0;
+        text-align: right;
+      }
+      .fix-email {
+        margin-left: 5px;
+        color: $primaryColor;
+      }
+    }
+    .form-control {
+      width: 100%;
+    }
+  }
+  .btn {
+    color: $content;
+    background-color: $primaryColor !important;
+  }
+  .small-padding {
+    padding: 0;
+  }
+  .form{
+    .footer{
+      display: none;
+    }
+  }
+  .success-bar{
+    padding-top: 20px;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .custom-password-error{
+    padding: 5px 0 0  !important;
+  }
+}

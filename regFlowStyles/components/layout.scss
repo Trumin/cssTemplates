@@ -1,0 +1,360 @@
+@import './pages/Landing';
+@import './pages/Tickets';
+
+html {
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background-color: $componentBackground;
+  color: $fontColor;
+  margin: 0;
+}
+
+body, h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+  line-height: 1;
+}
+
+h2 {
+  font-size: 2em;
+  line-height: .8;
+}
+
+h3 {
+  font-size: 25px;
+  margin: 0;
+}
+
+p {
+  font-size: 1em;
+  line-height: 1.45;
+}
+
+.footerOffset {
+  &.offset {
+    @include is-mobile-sm {
+      padding-bottom: 60px;
+    }
+  }
+  @include is-mobile-sm {
+    .fixed-bottom {
+      &:not(.onMobile) {
+        padding-top: 12px;
+      }
+    }
+  }
+}
+
+.hidden {
+  display: none !important;
+}
+
+.hidden-xs {
+  @include is-mobile-sm {
+    display: none;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  background: $content;
+}
+
+.header {
+  min-height: 300px;
+  background: $banner-wrapper;
+  background-size: cover;
+  filter: blur(2px);
+  @include is-mobile-sm {
+    display: none;
+  }
+}
+
+.banner {
+  box-shadow: 0 0 15px -4px #000;
+  background: $banner;
+  background-size: cover;
+  height: 300px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  @include is-mobile-sm {
+    height: 200px;
+    position: static;
+  }
+}
+
+.content {
+  padding: 0;
+  text-align: justify;
+}
+
+.leftSection, .rightSection {
+  padding: 30px;
+  background: none !important;
+}
+
+.event {
+
+  background: $eventNameBackground;
+  color: $eventFontColor;
+  padding: 0 10px;
+  height: 80px;
+  @include is-mobile-md {
+    height: 56px;
+  }
+  box-shadow: $box-shadow-primary;
+  position: relative;
+  margin-top: -2px;
+  img {
+    width: 45px;
+    height: 45px;
+    box-shadow: 0 0 11px 1px #9e9e9e;
+    border-radius: 50%;
+  }
+}
+
+.alignRight {
+  text-align: right;
+}
+
+.paper {
+  background: none !important;
+}
+
+.box {
+  padding: 20px;
+  @include is-mobile-md {
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: -8px;
+    margin-right: -8px;
+  }
+  background: $content;
+  opacity: 0.9;
+  margin-top: 2em;
+  box-shadow: 0 4px 10px -2px #9e9e9e;
+}
+
+.box h3 {
+  font-size: 16px;
+  line-height: 24px;
+  color: $fontColor;
+}
+
+.box h4,
+.box p {
+  color: $fontColor;
+}
+
+.icons {
+  color: rgba(0, 121, 188, 0.7) !important;
+  font-size: 5em;
+}
+
+.btn {
+  border: 10px;
+  box-sizing: border-box;
+  display: inline-block;
+  font-family: Roboto, sans-serif;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  text-decoration: none;
+  margin: 0;
+  padding: 2px 10px;
+  outline: none;
+  font-size: inherit;
+  font-weight: inherit;
+  position: relative;
+  vertical-align: middle;
+  height: 36px;
+  line-height: 36px;
+  border-radius: 2px;
+  transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+  text-align: center;
+  &.get_tickets {
+    font-size: 13px;
+  }
+}
+
+.btnSecondary {
+  background-color: white !important;
+  color: $eventNameBackground !important;
+  &.disabled {
+    visibility: hidden;
+  }
+  &.closed {
+    visibility: hidden;
+    pointer-events: none;
+    width: 100%;
+  }
+}
+
+.btnPrimary {
+  background: $darkColor !important;
+  margin-top: 12px;
+  color: $eventFontColor !important;
+  box-shadow: $box-shadow-primary;
+  text-transform: uppercase;
+  font-size: 13px;
+  &.disabled {
+    visibility: hidden;
+  }
+  &.closed {
+    background-color: #9e9e9e !important;
+    pointer-events: none;
+    width: 100%;
+    @include is-mobile-md-min{
+      width: auto;
+    }
+  }
+}
+
+.btnRight {
+  float: right;
+}
+
+.rightSection h3, .rightSection p {
+  padding-left: 40px;
+  padding-top: 10px;
+  text-align: left !important;
+  color: $fontColor !important;
+}
+
+.rightSection .time {
+  font-size: $small-font-size !important;
+}
+
+.rightSection .address {
+  color: $fontColor;
+  font-size: $small-font-size !important;
+  overflow: visible !important;
+  white-space: inherit !important;
+  display: inline-table;
+  line-height: 1.5 !important;
+  text-align: initial;
+  width: 180px;
+}
+
+.locationMap {
+  position: relative;
+  top: 8px;
+  display: block;
+  max-width: 482px;
+  width: 100%;
+  min-height: 235px;
+  @include is-mobile-sm {
+    width: auto;
+    max-width: none;
+    margin-left: -13px;
+    margin-right: -13px;
+  }
+}
+
+.rightSection {
+  hr.divider {
+    @include is-mobile-sm {
+      width: 100%;
+    }
+  }
+  .where-block {
+    margin-bottom: 10px;
+  }
+}
+
+hr.divider {
+  width: 90%;
+  margin: 20px auto !important;
+  border-top: 1px solid rgba(0, 121, 188, 0.7) !important;
+  background: none !important;
+  &.wave {
+    width: auto;
+  }
+  &.onMobile {
+    @include is-mobile-md-min {
+      display: none;
+    }
+  }
+}
+
+.ticketPrice {
+  padding: 5px 20px;
+}
+
+.footer {
+  box-shadow: 0 -4px 10px -4px #9e9e9e;
+  background: $componentBackground;
+  text-align: center;
+}
+
+.fixed-bottom {
+  min-height: 60px;
+  background: $componentBackground;
+  position: fixed;
+  width: 100% !important;
+  bottom: 0;
+  left: 0;
+}
+
+.banner-wrapper {
+  display: table;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.header {
+  //display: table-footer-group;
+}
+
+.hide button {
+  display: none !important;
+}
+
+.show button {
+  display: block;
+}
+
+.buy-now {
+  background-color: $primaryColor !important;
+  button {
+    background-color: $primaryColor !important;
+  }
+}
+.addProductButton {
+  button {
+    padding: 16px 9px !important;
+    color: white !important;
+  }
+}
+.primaryButton {
+  background-color: $primaryColor !important;
+  color: $content !important;
+  &.outlined {
+    background-color: unset !important;
+    border: 1px solid $primaryColor !important;
+    color:  $primaryColor !important;
+  }
+  &.disabled {
+    background-color: $disabled !important;
+    > button {
+      background-color: $disabled !important;
+    }
+  }
+  > button {
+    background-color: $primaryColor !important;
+    span {
+      color: $content !important;
+    }
+  }
+}
+.container-autosuggest{
+  margin-top: 16px;
+}
+
+.buttonSection{
+  display: flex;
+  justify-content: space-between;
+}
