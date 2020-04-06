@@ -1,0 +1,15 @@
+.totalPrice{
+  display: inline-block;
+  padding: 10px;
+  @include is-mobile-md{
+    padding-left: 0;
+    font-size: 15px;
+    line-height: 23px;
+    padding-right: 0;
+  }
+}
+.totalPrice{
+  @include is-mobile-md-min{
+    padding-left: 0;
+  }
+}
