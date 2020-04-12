@@ -151,7 +151,7 @@ p {
 }
 
 .icons {
-  color: rgba(0, 121, 188, 0.7) !important;
+  color: rgba(0, 121, 188, 0.7);
   font-size: 5em;
 }
 
@@ -181,8 +181,8 @@ p {
 }
 
 .btnSecondary {
-  background-color: white !important;
-  color: $eventNameBackground !important;
+  background-color: white;
+  color: $eventNameBackground;
   &.disabled {
     visibility: hidden;
   }
@@ -194,9 +194,9 @@ p {
 }
 
 .btnPrimary {
-  background: $darkColor !important;
+  background: $darkColor;
   margin-top: 12px;
-  color: $eventFontColor !important;
+  color: $eventFontColor;
   box-shadow: $box-shadow-primary;
   text-transform: uppercase;
   font-size: 13px;
@@ -221,7 +221,7 @@ p {
   padding-left: 40px;
   padding-top: 10px;
   text-align: left !important;
-  color: $fontColor !important;
+  color: $fontColor;
 }
 
 .rightSection .time {
@@ -268,7 +268,7 @@ p {
 hr.divider {
   width: 90%;
   margin: 20px auto !important;
-  border-top: 1px solid rgba(0, 121, 188, 0.7) !important;
+  border-top: 1px solid rgba(0, 121, 188, 0.7);
   background: none !important;
   &.wave {
     width: auto;
