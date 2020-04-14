@@ -1,10 +1,23 @@
-// Colors
+$bannerWrapper : url(https://static1.squarespace.com/static/5937ecf5725e25a794cebc0d/t/5938047546c3c4fb669d2ca3/1496843447295/AdobeStock_67486433.jpeg) 0px 100%;
+$banner : url(https://static1.squarespace.com/static/5937ecf5725e25a794cebc0d/t/5938047546c3c4fb669d2ca3/1496843447295/AdobeStock_67486433.jpeg) 20% center no-repeat ;
+$iconImg: url(https://s3-eu-west-1.amazonaws.com/truminfilestorage/Trumin+Logos/Trumin+Roundel.svg) center no-repeat;
+$backgroundImgType: cover no-repeat;
+$titleBarColour: #0079BC;
+$titleBarTextColour: #ffffff;
+$blur: blur(2px);
+$titleBarBtnTextColour: #ffffff;
+$titleBarBtnBackgroundColour: #0079BC;
+$paperBackgroundColour: #ffffff;
+$pageBodyTextColour: #333333;
+$accentAndIconColour: #0079bc;
+$ticketBoxColour: #ffffff;
+$ticketBoxTextColour: #333333;
+$ticketBoxButtonColour: #0079BC;
+$ticketBoxBtnTextColour: #ffffff;
 $fontColor : #333333;
 $primaryColor : #0079BC;
 $eventNameBackground : #0079BC;
 $content : #ffffff;
-$banner : url(https://static1.squarespace.com/static/5937ecf5725e25a794cebc0d/t/5938047546c3c4fb669d2ca3/1496843447295/AdobeStock_67486433.jpeg) 20% center no-repeat ;
-$banner-wrapper : url(https://static1.squarespace.com/static/5937ecf5725e25a794cebc0d/t/5938047546c3c4fb669d2ca3/1496843447295/AdobeStock_67486433.jpeg) 0px 100% no-repeat;
 $componentBackground : #fafafa !important;
 $eventFontColor:white;
 $darkColor: #0079BC;
