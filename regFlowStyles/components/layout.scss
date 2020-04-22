@@ -64,7 +64,7 @@ p {
 
 .header {
   min-height: 300px;
-  background: $bannerWrapper / $backgroundImgType;
+  background: $bannerWrapper 0px 100% / $backgroundImgType;
   filter: $blur;
   @include is-mobile-sm {
     display: none;
@@ -73,7 +73,7 @@ p {
 
 .banner {
   box-shadow: 0 0 15px -4px #000;
-  background: $banner;
+  background: $banner 20% center no-repeat;
   background-size: cover;
   height: 300px;
   position: absolute;
@@ -364,5 +364,5 @@ hr.divider {
   height: 45px;
   box-shadow: 0 0 11px 1px #9e9e9e;
   border-radius: 50%;
-  background: $iconImg;
+  background: $iconImg center no-repeat;
 }
