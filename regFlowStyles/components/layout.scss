@@ -387,6 +387,7 @@ hr.divider {
 }
 .ticketBox {
   background: $ticketBoxColour;
+  color: $ticketBoxTextColour !important;
 }
 .dot {
   background-color: $accentAndIconColour !important;
