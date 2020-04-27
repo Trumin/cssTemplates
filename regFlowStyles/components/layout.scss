@@ -132,7 +132,7 @@ p {
     margin-left: -8px;
     margin-right: -8px;
   }
-  background: $ticketBoxColour;
+  background: $paperBackgroundColour;
   opacity: 0.9;
   margin-top: 2em;
   box-shadow: 0 4px 10px -2px #9e9e9e;
@@ -180,8 +180,8 @@ p {
 }
 
 .btnSecondary {
-  background-color: $titleBarBtnTextColour;
-  color: $titleBarBtnBackgroundColour;
+  background-color: $secondaryBtnBackgroundColour !important;
+  color: $secondaryBtnTextColour !important;
   &.disabled {
     visibility: hidden;
   }
@@ -193,9 +193,9 @@ p {
 }
 
 .btnPrimary {
-  background: $darkColor;
+  background: $primaryBtnBackgroundColour !important;
   margin-top: 12px;
-  color: $eventFontColor;
+  color: $primaryBtnTextColour !important;
   box-shadow: $box-shadow-primary;
   text-transform: uppercase;
   font-size: 13px;
@@ -266,7 +266,7 @@ p {
 
 hr.divider {
   width: 90%;
-  margin: 20px auto !important;
+  margin: 20px auto;
   border: none;
   border-top: solid 1px $accentAndIconColour;
   background: none !important;
@@ -316,13 +316,6 @@ hr.divider {
 .show button {
   display: block;
 }
-
-.buy-now {
-  background-color: $primaryColor !important;
-  button {
-    background-color: $primaryColor !important;
-  }
-}
 .addProductButton {
   button {
     padding: 16px 9px !important;
@@ -330,12 +323,12 @@ hr.divider {
   }
 }
 .primaryButton {
-  background-color: $ticketBoxButtonColour !important;
-  color: $ticketBoxBtnTextColour !important;
+  background-color: $primaryBtnBackgroundColour !important;
+  color: $primaryBtnTextColour !important;
   &.outlined {
     background-color: unset !important;
-    border: 1px solid $ticketBoxButtonColour !important;
-    color:  $ticketBoxBtnTextColour !important;
+    border: 1px solid $primaryBtnBackgroundColour !important;
+    color:  $primaryBtnTextColour !important;
   }
   &.disabled {
     background-color: $disabled !important;
@@ -344,9 +337,9 @@ hr.divider {
     }
   }
   > button {
-    background-color: $ticketBoxButtonColour !important;
+    background-color: $primaryBtnBackgroundColour !important;
     span {
-      color: $ticketBoxBtnTextColour !important;
+      color: $primaryBtnTextColour !important;
     }
   }
 }
@@ -365,4 +358,41 @@ hr.divider {
   box-shadow: 0 0 11px 1px #9e9e9e;
   border-radius: 50%;
   background: $iconImg center no-repeat;
+  background-size: cover;
+}
+
+.defaultDivider {
+  width: 100%;
+  margin: 0 auto;
+  border: none;
+  border-top: solid 1px $accentAndIconColour;
+  background: none;
+  &.wave {
+    width: auto;
+  }
+  &.onMobile {
+    @include is-mobile-md-min {
+      display: none;
+    }
+  }
+}
+.dividerMargin {
+  margin: 20px auto;
+}
+.cartIcon {
+  color: $accentAndIconColour !important;
+}
+.productSectionItem {
+  border-top: 0.25px solid $accentAndIconColour;
+}
+.ticketBox {
+  background: $ticketBoxColour;
+}
+.dot {
+  background-color: $accentAndIconColour !important;
+}
+.phoneInput {
+  input {
+    background: transparent;
+  }
 }

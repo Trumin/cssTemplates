@@ -23,6 +23,10 @@
   padding: 10px 0 !important;
 }
 
+.stepLabelSelected span svg {
+  fill: $accentAndIconColour !important
+}
+
 .stepperContainer {
   position: relative;
   text-align: left;
