@@ -1,5 +1,5 @@
 .incrementerWrapper {
-  border: 1px solid $primaryColor;
+  border: 1px solid $accentAndIconColour;
   display: flex;
   &.error {
     border: 1px solid $error_color;
@@ -35,8 +35,8 @@
       opacity: 1;
       width: 100% !important;
       height: 100% !important;
-      border: 1px solid $primaryColor;
-      box-shadow: 0 0 5px 2px $primaryColor;
+      border: 1px solid $accentAndIconColour;
+      box-shadow: 0 0 5px 2px $accentAndIconColour;
     }
     .rootRipple {
       @include is-mobile-sm {

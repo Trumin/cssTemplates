@@ -6,7 +6,7 @@
     color: $fontColor;
   }
   .details {
-    border: 1px solid $primaryColor;
+    border: 1px solid $accentAndIconColour;
     border-radius: 2px;
     box-shadow: none;
     .custom-elevation {
@@ -112,7 +112,7 @@
     color: $error_color;
   }
   .edit {
-    color: $primaryColor
+    color: $accentAndIconColour
   }
   .divider {
     width: auto;
@@ -143,7 +143,7 @@
     }
   }
   .checked-terms {
-    color: $primaryColor !important;
+    color: $accentAndIconColour !important;
   }
   .offset-top {
     overflow: hidden;
