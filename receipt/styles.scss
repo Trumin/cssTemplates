@@ -1,0 +1,26 @@
+@import 'variables';
+
+.headingContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.img {
+  background-size: cover;
+  background-position: center;
+}
+
+.headerImg {
+  background-image: $headerImage;
+}
+
+.logoImg {
+  background-image: $logoImage;
+  width: 45px;
+  height: 45px;
+}
+
+.footerImg {
+  background-image: $footerImage;
+}
