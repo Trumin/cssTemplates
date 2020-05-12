@@ -2,6 +2,8 @@ $bannerWrapper : url(https://static1.squarespace.com/static/5937ecf5725e25a794ce
 $banner : url(https://static1.squarespace.com/static/5937ecf5725e25a794cebc0d/t/5938047546c3c4fb669d2ca3/1496843447295/AdobeStock_67486433.jpeg);
 $iconImg: url(https://s3-eu-west-1.amazonaws.com/truminfilestorage/Trumin+Logos/Trumin+Roundel.svg);
 $backgroundImgType: cover no-repeat;
+$backgroundImgToggle: 1;
+$componentBackground : #ffffff;
 $titleBarColour: #0079BC;
 $titleBarTextColour: #ffffff;
 $blur: blur(2px);
@@ -18,8 +20,7 @@ $fontColor : #333333;
 $primaryColor : #0079BC;
 $eventNameBackground : #0079BC;
 $content : #ffffff;
-$componentBackground : #fafafa !important;
-$eventFontColor:white;
+$eventFontColor: white;
 $darkColor: #0079BC;
 $overlay : transparent !important;
 $gray500: #9e9e9e;
