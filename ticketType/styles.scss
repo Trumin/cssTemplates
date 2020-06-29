@@ -1,11 +1,6 @@
 @import: "variables.scss";
 /* This code needs to change based on the requirements for the new ticket layout */    
 
-#{$themeId} {
-    & .wowcolours {
-    background-color: red;
-    }
-    & p {
-    font-family: sans-serif;
-    }
+#{$themeId} div.qrArea{
+	background: #ffffff;
 }
