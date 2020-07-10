@@ -94,14 +94,15 @@ p {
   background: $banner 20% center no-repeat;
   background-size: cover;
   height: 300px;
-  position: absolute;
+  //position: absolute;
+  position: static;
   top: 0;
   left: 0;
   right: 0;
-  @include is-mobile-sm {
-    height: 200px;
-    position: static;
-  }
+  //@include is-mobile-sm {
+  //  height: 200px;
+  //  position: static;
+  //}
 }
 
 .content {
