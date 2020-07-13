@@ -3,4 +3,7 @@
 
 div.banner {
 	background: $bannerImage;
+	padding-top: $bannerAspectRatioPadding;
+	overflow: hidden;
+	height: 0;
 }

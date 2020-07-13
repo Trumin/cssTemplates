@@ -14,6 +14,9 @@
 .headerImg {
   background-image: $headerImage;
   background-color: gray;
+  overflow: hidden;
+  height: 0;
+  padding-top: $headerAspectRatioPadding,
 }
 
 .logoImg {
@@ -25,4 +28,7 @@
 .footerImg {
   background-image: $footerImage;
   background-color: gray;
+  overflow: hidden;
+  height: 0;
+  padding-top: $footerAspectRatioPadding,
 }
