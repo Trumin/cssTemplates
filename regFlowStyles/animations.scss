@@ -46,6 +46,9 @@
   overflow: auto;
   box-sizing: border-box;
   transition: transform 0.5s;
+  width: 1184px !important;
+  max-width: 100%;
+  margin: auto;
   &.transition-leave {
     transform: translate3d(0, 0, 0);
     z-index: 2;
