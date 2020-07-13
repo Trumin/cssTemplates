@@ -82,7 +82,7 @@ p {
 }
 
 .header {
-  min-height: 300px;
+  //min-height: 300px;
   filter: $blur;
   @include is-mobile-sm {
     display: none;
@@ -93,7 +93,6 @@ p {
   box-shadow: 0 0 15px -4px #000;
   background: $banner 20% center no-repeat;
   background-size: cover;
-  height: 300px;
   //position: absolute;
   position: static;
   top: 0;
@@ -103,6 +102,12 @@ p {
   //  height: 200px;
   //  position: static;
   //}
+}
+
+div.responsiveBanner {
+  overflow: hidden;
+  padding-top: $bannerAspectRatioPadding;
+  height: 0 !important;
 }
 
 .content {
@@ -141,6 +146,12 @@ p {
 
 .paper {
   background: none !important;
+}
+
+.paperBody {
+  .container {
+    width: 100% !important;
+  }
 }
 
 .box {
@@ -323,6 +334,9 @@ hr.divider {
   display: table;
   margin: 0 auto;
   width: 100%;
+ .container {
+   width: 100% !important;
+ }
 }
 
 .header {
