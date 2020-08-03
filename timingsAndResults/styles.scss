@@ -1,0 +1,18 @@
+@import "variables";
+
+.bannerImg {
+  background-image: $bannerImage;
+  background-color: gray;
+  overflow: hidden;
+  height: 0;
+  padding-top: $bannerAspectRatioPadding;
+  .title {
+    color: $bannerTextColor;
+  }
+}
+
+.pageBackground {
+  background-image: $backgroundImg;
+  background-size: cover;
+  background-color: gray;
+}
