@@ -1,0 +1,16 @@
+@use '../variables/variables' as v;
+
+html {
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background-color: v.$backgroundColor;
+  background-position: center;
+  background-image: if(v.$backgroundImgToggle = "true",v.$backgroundImg, none);
+  background-repeat: v.$backgroundRepeat;
+  background-size: v.$backgroundSize;
+  margin: 0;
+  padding: 24px 16px;
+}
