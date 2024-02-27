@@ -1,6 +1,7 @@
 @import '../variables/variables';
 
 .banner {
+  display: block;
   overflow: hidden;
   margin: 0;
   padding-top: $bannerAspectRatioPadding;
