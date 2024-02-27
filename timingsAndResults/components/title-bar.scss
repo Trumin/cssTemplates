@@ -1,4 +1,4 @@
-@use '../variables/variables' as v;
+@import '../variables/variables';
 
 .titleBar {
   position: relative;
@@ -7,7 +7,7 @@
   justify-content: center;
   padding: 32px 16px;
   text-align: center;
-  background-color: v.$titleBarColor;
+  background-color: $titleBarColor;
 }
 
 .titleBarLogo {
@@ -16,10 +16,10 @@
   top: 15%;
   height: 70%;
   width: auto;
-  content: v.$titleBarImage;
+  content: $titleBarImage;
 }
 
 .titleBarText {
   font-size: 28px;
-  color: v.$titleBarTextColor;
+  color: $titleBarTextColor;
 }

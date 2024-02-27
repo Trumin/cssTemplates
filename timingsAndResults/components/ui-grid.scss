@@ -1,4 +1,4 @@
-@use '../variables/variables' as v;
+@import '../variables/variables';
 
 .ui-grid-header-cell-row {
   position:  relative;
@@ -7,9 +7,9 @@
   overflow-y:  scroll;
   min-width:  800px;
   padding: 4px 8px 8px;
-  background-color: v.$headerColor;
+  background-color: $headerColor;
 }
 
 .ui-grid-header-cell-label {
-  color: v.$headerTextColor;
+  color: $headerTextColor;
 }
