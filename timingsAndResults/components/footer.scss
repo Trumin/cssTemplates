@@ -12,13 +12,9 @@
 .footerText {
   font-size: 14px;
   color: $footerTextColor;
+}
 
-  & a {
-    color: $footerTextColor;
-
-    &:hover {
-      color: $footerTextColor;
-      text-decoration: underline;
-    }
-  }
+.footerText:hover {
+  color: $footerTextColor;
+  text-decoration: underline;
 }
