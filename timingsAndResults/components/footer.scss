@@ -1,0 +1,15 @@
+@use '../variables/variables' as v;
+
+.footer {
+  display:  flex;
+  align-items:  center;
+  justify-content:  center;
+  padding: 6px 16px;
+  margin: 0;
+  background-color: v.$footerColor;
+}
+
+.footerText {
+  font-size: 14px;
+  color: v.$footerTextColor;
+}

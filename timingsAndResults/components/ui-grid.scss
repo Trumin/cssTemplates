@@ -1,0 +1,15 @@
+@use '../variables/variables' as v;
+
+.ui-grid-header-cell-row {
+  position:  relative;
+  display:  flex;
+  gap:  12px;
+  overflow-y:  scroll;
+  min-width:  800px;
+  padding: 4px 8px 8px;
+  background-color: v.$headerColor;
+}
+
+.ui-grid-header-cell-label {
+  color: v.$headerTextColor;
+}

@@ -1,0 +1,8 @@
+@use '../variables/variables' as v;
+
+.banner {
+  overflow: hidden;
+  margin: 0;
+  padding-top: v.$bannerAspectRatioPadding;
+  background: v.$bannerImage center / cover no-repeat;
+},

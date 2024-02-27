@@ -1,0 +1,25 @@
+@use '../variables/variables' as v;
+
+.titleBar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 16px;
+  text-align: center;
+  background-color: v.$titleBarColor;
+}
+
+.titleBarLogo {
+  position: absolute;
+  left: 12px;
+  top: 15%;
+  height: 70%;
+  width: auto;
+  content: v.$titleBarImage;
+}
+
+.titleBarText {
+  font-size: 28px;
+  color: v.$titleBarTextColor;
+}
