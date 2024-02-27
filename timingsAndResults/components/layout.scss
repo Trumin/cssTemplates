@@ -1,4 +1,4 @@
-@use '../variables/variables' as v;
+@import '../variables/variables';
 
 html {
   font-family: 'Roboto', sans-serif;
@@ -6,11 +6,11 @@ html {
 }
 
 body {
-  background-color: v.$backgroundColor;
+  background-color: $backgroundColor;
   background-position: center;
-  background-image: if(v.$backgroundImgToggle = "true",v.$backgroundImg, none);
-  background-repeat: v.$backgroundRepeat;
-  background-size: v.$backgroundSize;
+  background-image: if($backgroundImgToggle = "true",$backgroundImg, none);
+  background-repeat: $backgroundRepeat;
+  background-size: $backgroundSize;
   margin: 0;
   padding: 24px 16px;
 }
