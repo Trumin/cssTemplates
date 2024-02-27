@@ -8,9 +8,12 @@ html {
 body {
   background-color: $backgroundColor;
   background-position: center;
-  background-image: if($backgroundImgToggle = "true",$backgroundImg, none);
   background-repeat: $backgroundRepeat;
   background-size: $backgroundSize;
   margin: 0;
   padding: 24px 16px;
+
+  @if $backgroundImgToggle == "true" {
+    background-image: $backgroundImg;
+  }
 }
