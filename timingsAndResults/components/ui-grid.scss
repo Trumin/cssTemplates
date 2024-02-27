@@ -1,12 +1,9 @@
 @import '../variables/variables';
 
 .ui-grid-header-cell-row {
-  position:  relative;
-  display:  flex;
-  gap:  12px;
   overflow-y:  scroll;
+  flex-wrap: nowrap;
   min-width:  800px;
-  padding: 4px 8px 8px;
   background-color: $headerColor;
 }
 
