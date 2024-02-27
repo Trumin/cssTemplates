@@ -1,9 +1,9 @@
 @import '../variables/variables';
 
 .footer {
-  display:  flex;
-  align-items:  center;
-  justify-content:  center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 6px 16px;
   margin: 0;
   background-color: $footerColor;
@@ -12,4 +12,13 @@
 .footerText {
   font-size: 14px;
   color: $footerTextColor;
+
+  & a {
+    color: $footerTextColor;
+
+    &:hover {
+      color: $footerTextColor;
+      text-decoration: underline;
+    }
+  }
 }
